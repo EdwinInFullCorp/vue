@@ -34,7 +34,7 @@ export default {
     submit() {
       this.axios({
         method: "post",
-        url: `http://192.168.3.135:5000/login`,
+        url: `/login`,
         data: { account: this.account, password: this.password }
       })
         .then(response => {

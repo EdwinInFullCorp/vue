@@ -7,6 +7,8 @@
       <li><router-link to="/login">登入</router-link></li>
       <li><router-link to="/wish">願望清單</router-link></li>
       <li><router-link to="/profile">個人資料</router-link></li>
+      <li><router-link to="/profile/AA">個人資料AA</router-link></li>
+      <li><router-link to="/profile/BB">個人資料BB</router-link></li>
     </ul>
     <router-view></router-view>
   </div>

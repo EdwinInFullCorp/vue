@@ -1,11 +1,12 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
 
-import Test from './components/Test.vue';
-import Register from './components/Register.vue';
-import Login from './components/Login.vue';
-import Profile from './components/Profile.vue';
-import WishList from './components/WishList.vue';
+import Home from './components/Home.vue';
+import Register from './components/PageRegister.vue';
+import Login from './components/PageLogin.vue';
+import Profile from './components/PageProfile.vue';
+import WishList from './components/PageWishList.vue';
+import User from './components/User.vue';
 
 Vue.use(VueRouter);
 
@@ -14,8 +15,8 @@ export default new VueRouter({
   routes:[
     {
       path: '/',
-      name: 'test',
-      component: Test
+      name: 'home',
+      component: Home
     },
     {
       path: '/register',
@@ -36,6 +37,11 @@ export default new VueRouter({
       path: '/profile',
       name: 'profile',
       component: Profile
+    },
+    {
+      path: '/profile/:id',
+      name: 'User',
+      component: User
     }
   ]
 });

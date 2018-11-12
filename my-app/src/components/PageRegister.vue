@@ -1,12 +1,12 @@
 <template>
   <div>
-    <span v-if="isProfile === true"> {{profileSuccessMessage}} </span>
+    <span v-if="isRegister === true"> {{registerSuccessMessage}} </span>
     <form action="" v-else>
       <h1>{{ title }}</h1>
       <label for="">Nickname</label>
       <input type="text" v-model="nickname"/>
       <label for="">Account</label>
-      <input type="text" v-model="account" readonly/>
+      <input type="text" v-model="account"/>
       <label for="">E-mail</label>
       <input type="text" v-model="email"/>
       <label for="">Phone</label>
@@ -15,40 +15,39 @@
       <input type="password" v-model="password"/>
       <label for="">Confirm Password</label>
       <input type="password" v-model="confirmPassword"/>
-      <p class="profile-message" v-if="isProfile === false"> {{profileMessage}} </p>
-      <button class="profile-submit" type="button" v-on:click="save">SAVE</button>
+      <p class="register-message" v-if="isRegister === false"> {{registerMessage}} </p>
+      <button class="register-submit" type="button" v-on:click="submit">SUBMIT</button>
     </form>
   </div>
 </template>
 <script>
 export default {
-  name: "Profile",
+  name: "Register",
   data() {
     return {
-      title: "Profile",
-      nickname: "a",
-      account: "a",
-      password: "**********",
-      confirmPassword: "**********",
-      phone: "0987654321",
-      email: "a@a.a",
+      title: "Register",
+      nickname: "",
+      account: "",
+      password: "",
+      confirmPassword: "",
+      phone: "",
+      email: "",
       isPass: false,
-      isProfile: false,
-      profileMessage: "",
-      profileSuccessMessage: ""
+      isRegister: false,
+      registerMessage: "",
+      registerSuccessMessage: ""
     };
   },
   methods: {
     $_check() {
-      if (this.password.length >= 6 && this.password === this.confirmPassword)
-        this.isPass = true;
+      if (this.password.length >= 6 && this.password === this.confirmPassword) this.isPass = true;
     },
-    save() {
+    submit() {
       this.$_check();
       if (this.isPass === true) {
         this.axios({
           method: "post",
-          url: `http://192.168.3.135:5000/profile`,
+          url: `/register`,
           data: {
             nickname: this.nickname,
             account: this.account,
@@ -59,13 +58,13 @@ export default {
         })
           .then(response => {
             if (response.data.isSuccess === true) {
-              this.isProfile = true;
-              this.profileSuccessMessage =
+              this.isRegister = true;
+              this.registerSuccessMessage =
                 "恭喜! " + this.nickname + " 註冊成功";
             } else {
-              this.isProfile = false;
+              this.isRegister = false;
             }
-            this.profileMessage = response.data.info;
+            this.registerMessage = response.data.info;
           })
           .catch(function(error) {
             console.log(error);
@@ -90,7 +89,7 @@ label {
   display: block;
   height: 20px;
 }
-.profile-submit {
+.register-submit {
   display: block;
   padding: 8px;
   outline: none;
@@ -102,7 +101,7 @@ label {
   float: right;
   transition: all 0.3s;
 }
-.profile-submit:hover {
+.register-submit:hover {
   box-shadow: 2px 3px 8px 0 #ccc;
   background-color: #5454c5;
   border-radius: 4px;
@@ -116,18 +115,12 @@ input {
   outline: none;
   background-color: rgba(0, 0, 0, 0);
 }
-input[readonly] {
-  background-color: #6f6fff;
-  background-image: linear-gradient(to right, #6f6fff ,  #ffffff 40%);
-  color: #ffffff;
-  user-select: none;
-}
 h1 {
   color: #6f6fff;
   margin: 8px 0;
   padding: 0;
 }
-.profile-message {
+.register-message {
   color: #ff4747;
 }
 </style>
