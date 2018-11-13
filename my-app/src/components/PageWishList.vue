@@ -35,9 +35,8 @@ export default {
   },
   methods: {
     addWish() {
-      if (!!this.wishName) {
+      if (this.wishName) {
         this.wishContainer.push({ name: this.wishName });
-      } else {
       }
       this.wishName = "";
     },

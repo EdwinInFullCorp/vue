@@ -48,7 +48,6 @@ export default {
           this.loginMessage = response.data.info;          
         })
         .catch(function(error) {
-          console.log(error);
         });
     }
   }

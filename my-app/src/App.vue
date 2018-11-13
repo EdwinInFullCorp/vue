@@ -9,6 +9,7 @@
       <li><router-link to="/profile">個人資料</router-link></li>
       <li><router-link to="/profile/AA">個人資料AA</router-link></li>
       <li><router-link to="/profile/BB">個人資料BB</router-link></li>
+      <li><router-link to="/error">錯誤畫面</router-link></li>
     </ul>
     <router-view></router-view>
   </div>
@@ -16,7 +17,12 @@
 
 <script>
 export default {
-  name: "app"
+  name: "app",
+  data(){
+    return {
+      isLogin:false
+    }
+  }
 };
 </script>
 

@@ -7,6 +7,7 @@ import Login from './components/PageLogin.vue';
 import Profile from './components/PageProfile.vue';
 import WishList from './components/PageWishList.vue';
 import User from './components/User.vue';
+import SystemError from './components/PageSystemError.vue';
 
 Vue.use(VueRouter);
 
@@ -40,8 +41,13 @@ export default new VueRouter({
     },
     {
       path: '/profile/:id',
-      name: 'User',
+      name: 'user',
       component: User
+    },
+    {
+      path: '/error',
+      name: 'error',
+      component: SystemError
     }
   ]
 });

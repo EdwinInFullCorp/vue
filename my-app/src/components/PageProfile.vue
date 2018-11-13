@@ -68,7 +68,6 @@ export default {
             this.profileMessage = response.data.info;
           })
           .catch(function(error) {
-            console.log(error);
           });
       } else {
         alert("no!");

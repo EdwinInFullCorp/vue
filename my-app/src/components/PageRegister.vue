@@ -67,7 +67,6 @@ export default {
             this.registerMessage = response.data.info;
           })
           .catch(function(error) {
-            console.log(error);
           });
       } else {
         alert("no!");
