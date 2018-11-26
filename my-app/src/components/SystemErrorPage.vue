@@ -1,9 +1,9 @@
 <template>
   <div class="error-container">
-      <img class="error-image" src="../assets/error.svg" alt="">
-      <h1 class="error-code">404</h1>
-      <h2 class="error-title">此頁面不存在</h2>      
-      <p class="error-message">這資料似乎比我們想像的更難找。</p>
+    <img class="error-image" src="../assets/error.svg" alt="">
+    <h1 class="error-code">404</h1>
+    <h2 class="error-title">此頁面不存在</h2>      
+    <p class="error-message">這資料似乎比我們想像的更難找。</p>
   </div>
 </template>
 <script>

@@ -1,41 +1,70 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.svg" width="100">
-    <ul>
-      <li><router-link to="/">首頁</router-link></li>
-      <li><router-link to="/register">註冊</router-link></li>
-      <li><router-link to="/login">登入</router-link></li>
-      <li><router-link to="/wish">願望清單</router-link></li>
-      <li><router-link to="/profile">個人資料</router-link></li>
-      <li><router-link to="/profile/AA">個人資料AA</router-link></li>
-      <li><router-link to="/profile/BB">個人資料BB</router-link></li>
-      <li><router-link to="/error">錯誤畫面</router-link></li>
-    </ul>
-    <router-view></router-view>
+    <Login v-if="isLogin===false" v-on:get-user-from-login="changeUser"/>
+    <Home v-else v-bind:username="user.name" v-bind:userid="user.id" v-on:get-user-from-login="changeUser"/>
   </div>
 </template>
 
 <script>
+import Login from "./components/Login.vue";
+import Home from "./components/Home.vue";
+
 export default {
   name: "app",
-  data(){
+  components: {
+    Login,
+    Home
+  },
+  props: {},
+  data() {
     return {
-      isLogin:false
+      isLogin: false,
+      user: {
+        success: false,
+        id: "",
+        name: ""
+      }
+    };
+  },
+  created: function() {
+    this.axios
+      .post("/check")
+      .then(response => {
+        Object(response.data.success)
+          ? this.changeUser(response.data)
+          : this.noUser();
+      })
+      .catch(error => {
+        // console.log("inAppError");
+        console.log(error.response);
+      });
+  },
+  methods: {
+    noUser() {
+      this.user.success = false;
+      this.user.id = "";
+      this.user.name = "";
+      this.isLogin = false;
+    },
+    changeUser(value) {
+      this.user = value;
+      this.user.success === true
+        ? (this.isLogin = true)
+        : (this.isLogin = false);
     }
   }
 };
 </script>
 
 <style>
-body {
+body,
+input {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", "Microsoft JhengHei",
+    sans-serif;
+  font-size: 16px;
 }
-img {
-  margin: auto;
-  display: block;
-}
-li {
-  list-style: none;
+body {
+  color: #666;
 }
 </style>

@@ -9,16 +9,13 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="79.375mm"
-   height="79.375mm"
-   viewBox="0 0 79.375 79.375"
+   width="121.70833mm"
+   height="121.70834mm"
+   viewBox="0 0 121.70833 121.70834"
    version="1.1"
    id="svg8"
    inkscape:version="0.92.2 (5c3e80d, 2017-08-06)"
-   sodipodi:docname="logo.svg"
-   inkscape:export-filename="\\FULLCORP\UserData$\edwin\桌面\E.png"
-   inkscape:export-xdpi="72"
-   inkscape:export-ydpi="72">
+   sodipodi:docname="replace_logo.svg">
   <defs
      id="defs2" />
   <sodipodi:namedview
@@ -28,21 +25,24 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.98994949"
-     inkscape:cx="-119.87479"
-     inkscape:cy="28.038931"
+     inkscape:zoom="1.4"
+     inkscape:cx="161.81781"
+     inkscape:cy="244.22406"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
-     showgrid="true"
+     showgrid="false"
+     inkscape:snap-intersection-paths="true"
+     inkscape:snap-midpoints="true"
+     inkscape:snap-smooth-nodes="true"
      fit-margin-top="0"
      fit-margin-left="0"
      fit-margin-right="0"
      fit-margin-bottom="0">
     <inkscape:grid
        type="xygrid"
-       id="grid815"
-       originx="-42.333332"
-       originy="-179.91667" />
+       id="grid894"
+       originx="526.52083"
+       originy="-63.499992" />
   </sodipodi:namedview>
   <metadata
      id="metadata5">
@@ -52,7 +52,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -60,26 +60,30 @@
      inkscape:label="圖層 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(-42.333332,-37.708332)">
+     transform="translate(526.52081,-111.79166)">
+    <rect
+       style="opacity:1;vector-effect:none;fill:#000000;fill-opacity:0;fill-rule:nonzero;stroke:none;stroke-width:1.4636364;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke markers fill"
+       id="rect817"
+       width="121.70833"
+       height="121.70834"
+       x="-526.52081"
+       y="111.79166" />
     <path
-       style="fill:none;stroke:#6f6fff;stroke-width:5.29166651;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="M 74.083332,56.229168 52.53869,77.77381 74.083332,98.562501"
-       id="path819"
-       inkscape:connector-curvature="0" />
-    <path
-       style="fill:none;stroke:#6f6fff;stroke-width:5.29166651;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="M 68.791667,61.520833 H 100.54167"
-       id="path829"
-       inkscape:connector-curvature="0" />
-    <path
-       style="fill:none;stroke:#6f6fff;stroke-width:5.29166651;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 55.5625,77.395833 h 59.53125"
-       id="path831"
-       inkscape:connector-curvature="0" />
-    <path
-       style="fill:none;stroke:#6f6fff;stroke-width:5.29166651;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="M 68.791667,93.270833 H 100.54167"
-       id="path833"
-       inkscape:connector-curvature="0" />
+       style="opacity:1;vector-effect:none;fill:#ff6060;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:7.55905533;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke markers fill"
+       d="M 40 30 L 40 330 L 40 360 L 70 360 L 224.63086 360 A 99.999999 99.999999 0 0 0 320 430 A 99.999999 99.999999 0 0 0 420 330 L 420 200 A 99.999999 99.999999 0 0 0 320 100 A 99.999999 99.999999 0 0 0 220 200 A 99.999999 99.999999 0 0 0 320 300 A 99.999999 99.999999 0 0 0 390 271.28711 L 390 330 A 70.000003 70.000003 0 0 1 320 400 A 70.000003 70.000003 0 0 1 250 330 L 220 330 L 70 330 L 70 30 L 40 30 z M 320 130 A 70.000003 70.000003 0 0 1 390 200 A 70.000003 70.000003 0 0 1 320 270 A 70.000003 70.000003 0 0 1 250 200 A 70.000003 70.000003 0 0 1 320 130 z "
+       transform="matrix(0.26458333,0,0,0.26458333,-526.52081,111.79166)"
+       id="path917-8" />
+    <circle
+       style="opacity:1;vector-effect:none;fill:#ff6060;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke markers fill"
+       id="path973"
+       cx="-488.15625"
+       cy="163.38542"
+       r="11.90625" />
+    <circle
+       style="opacity:1;vector-effect:none;fill:#ff6060;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke markers fill"
+       id="path973-1"
+       cx="-441.85416"
+       cy="164.70833"
+       r="11.90625" />
   </g>
 </svg>
